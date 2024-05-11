@@ -1,0 +1,32 @@
+{
+  "textPrompt": {
+    "value": "\u003cimg id\u003d\"space2\" data-sample-image-id\u003d\"space2\"\u003edescreva esta imagem associando ela com a efemeridade da vida\n\nmencionando as nuvens 5 vezes. O sol se põe, a vida se esvai,\nComo nuvens que o vento desfaz\nNo céu cor de sangre, que carmim se inflama,\nde um vermelho sangrento que se derrama.\n\nNuvens passam, sombras fugazes,\nTestemunhas de fins e inícios vorazes.\nA vida, qual nuvem que se desvanece,\nEm final da luz, morte derradeira.\n\nNuvens de fogo, o céu a tingir,\nLembram o quão breve é existir.\nNo céu ardente, em que se desenha,\nA vida, como cortinas, se fecham finalizando a cena.\n\nNuvens de sangue, o céu a sangrar,\nA vida que se esvai, sem mais voltar.\nA imagem grita, em tons de escuro pesar,\nA efemeridade da vida, a nos abandonar. "
+  },
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "models/gemini-1.5-pro-latest",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "maxOutputTokens": 8192,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }],
+    "responseMimeType": "text/plain"
+  },
+  "testExamples": [{
+  }],
+  "systemInstruction": {
+    "text": "Responda apenas usando rimas. ",
+    "role": "user"
+  }
+}
